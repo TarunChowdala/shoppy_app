@@ -1,0 +1,22 @@
+.cart-items-container {
+  min-height: 100vh;
+}
+.no-cart-items {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-items-img {
+  width: 400px;
+}
+.cart-footer-container {
+  width: 100%;
+  padding: 0px 50px 0px 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

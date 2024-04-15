@@ -1,0 +1,154 @@
+.home-container {
+  height: 100vh;
+  overflow-x: hidden;
+}
+.product-item {
+  width: 100px;
+}
+.react-slider-container {
+  width: 50%;
+}
+.slide-image-container {
+  height: 400px;
+  margin-bottom: 20px;
+}
+.slide-image-inner-container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster-description-container {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer-alert-container {
+  width: 100%;
+  background-color: black;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span {
+  color: orangered;
+  font-size: 15px;
+  padding-left: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.span:hover {
+  transition: smooth 0.5s all;
+  color: cyan;
+}
+.offer-text {
+  color: white;
+  font-family: Apple Chancery, cursive;
+  font-size: 12px;
+  text-align: center;
+}
+.slide-1 {
+  background-image: url("https://res.cloudinary.com/dvtotdiqa/image/upload/v1711003800/cns7zbfw3fwllqfpkbul.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+.slide-2 {
+  background-image: url("https://res.cloudinary.com/dvtotdiqa/image/upload/v1711081712/un6iw3unjxl9jbk20upb.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+.slide-3 {
+  background-image: url("https://res.cloudinary.com/dvtotdiqa/image/upload/v1711082255/oulwuzro0dy3omu5kl7r.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+.fashion-sale-text {
+  font-family: MV Boli;
+  font-weight: bold;
+  font-size: 42px;
+  color: orangered;
+}
+.poster-heading {
+  font-family: Verdana;
+  font-size: 30px;
+  color: rgb(38, 38, 39);
+}
+.poster-para {
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(38, 38, 39);
+}
+.poster-button {
+  background-color: rgb(38, 38, 39);
+  color: white;
+  padding: 5px;
+  width: 145px;
+  font-family: Verdana;
+  transition: 0.5s;
+  border: solid 2px rgb(38, 38, 39);
+  outline: none;
+}
+.poster-button:hover {
+  outline: none;
+  transition: 0.5s;
+  transform: scale(1.05);
+  background-color: white;
+  color: rgb(38, 38, 39);
+  font-weight: bold;
+}
+.cart-icon {
+  display: flex;
+  align-items: center;
+}
+
+.featured-products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featured-products-text {
+  color: #011222;
+  font-family: serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.featured-product-card {
+  width: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.devider {
+  width: 80%;
+}
+
+@media (max-width: 737px) {
+  .slide-image-inner-container {
+    width: 100%;
+  }
+  .poster-heading {
+    text-align: center;
+    font-size: 30px;
+  }
+  .fashion-sale-text {
+    font-size: 35px;
+  }
+  .featured-product-card {
+    width: 90%;
+  }
+  .featured-products-text {
+    font-size: 35px;
+  }
+  .offer-text {
+    font-size: 9px;
+  }
+  .span {
+    font-size: 11px;
+  }
+}

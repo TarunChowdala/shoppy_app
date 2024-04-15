@@ -1,0 +1,128 @@
+.logo {
+  width: 200px;
+}
+.form-container {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      112.5deg,
+      rgb(214, 214, 214) 0%,
+      rgb(214, 214, 214) 10%,
+      rgb(195, 195, 195) 10%,
+      rgb(195, 195, 195) 53%,
+      rgb(176, 176, 176) 53%,
+      rgb(176, 176, 176) 55%,
+      rgb(157, 157, 157) 55%,
+      rgb(157, 157, 157) 60%,
+      rgb(137, 137, 137) 60%,
+      rgb(137, 137, 137) 88%,
+      rgb(118, 118, 118) 88%,
+      rgb(118, 118, 118) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(
+      157.5deg,
+      rgb(214, 214, 214) 0%,
+      rgb(214, 214, 214) 10%,
+      rgb(195, 195, 195) 10%,
+      rgb(195, 195, 195) 53%,
+      rgb(176, 176, 176) 53%,
+      rgb(176, 176, 176) 55%,
+      rgb(157, 157, 157) 55%,
+      rgb(157, 157, 157) 60%,
+      rgb(137, 137, 137) 60%,
+      rgb(137, 137, 137) 88%,
+      rgb(118, 118, 118) 88%,
+      rgb(118, 118, 118) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(214, 214, 214) 0%,
+      rgb(214, 214, 214) 10%,
+      rgb(195, 195, 195) 10%,
+      rgb(195, 195, 195) 53%,
+      rgb(176, 176, 176) 53%,
+      rgb(176, 176, 176) 55%,
+      rgb(157, 157, 157) 55%,
+      rgb(157, 157, 157) 60%,
+      rgb(137, 137, 137) 60%,
+      rgb(137, 137, 137) 88%,
+      rgb(118, 118, 118) 88%,
+      rgb(118, 118, 118) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
+  background-blend-mode: overlay, overlay, overlay, normal;
+}
+
+.form {
+  width: 80%;
+}
+.input-element {
+  width: 100%;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-bottom: 17px;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 12px;
+}
+.welcome-text {
+  color: rgb(56, 61, 63);
+  font-family: sans-serif;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.span {
+  cursor: pointer;
+  text-decoration: none;
+}
+.label {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+.sign-up-text {
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+.form-button {
+  background-color: black;
+  padding: 2px;
+  color: white;
+  border-style: none;
+  width: 90px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.form-button:hover {
+  transition: 0.5s all;
+  background-color: white;
+  color: black;
+  border: solid 1.5px black;
+}
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}

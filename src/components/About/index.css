@@ -1,0 +1,23 @@
+.about-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 70px;
+  padding: 50px;
+  background-color: rgb(252, 149, 111);
+}
+.about-us-text {
+  color: #011222;
+  font-family: serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.about-description {
+  color: rgb(71, 70, 70);
+  font-size: 15px;
+}
+.about-description::before {
+  content: " ==>  ";
+}

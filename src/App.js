@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+import LoginPage from "./components/LoginPage";
+import Home from "./components/Home";
+import Store from "./components/Store";
+import About from "./components/About";
+import UserDetails from "./components/UserDetails";
+import Cart from "./components/Cart";
+import SelectedProductItem from "./components/SelectedProductItem";
+import Undefined from "./components/Undefined";
+
+export const userContext = createContext();
+
+const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const [route, setRoute] = useState({ activeRoute: "home" });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <userContext.Provider
+      value={{ value1: [route, setRoute], value2: [cartItems, setCartItems] }}
+    >
+      <Routes>
+        <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/store" element={<Store />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/user" element={<UserDetails />} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/products/:id" element={<SelectedProductItem />} />
+        <Route exact path="/undefined" element={<Undefined />} />
+      </Routes>
+    </userContext.Provider>
   );
-}
+};
 
 export default App;
